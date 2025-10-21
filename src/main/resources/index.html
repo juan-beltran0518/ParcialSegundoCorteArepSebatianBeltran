@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios Matemáticos</title>
+</head>
+<body>
+    <h1>Operaciones Matemáticas</h1>
+
+    <h3>Factores</h3>
+    <form action="/proxy/factors" method="post">
+        <label>Valor:</label>
+        <input type="number" name="value" required>
+        <button type="submit">Calcular Factores</button>
+    </form>
+
+    <h3>Primos</h3>
+    <form action="/proxy/primes" method="post">
+        <label>Valor:</label>
+        <input type="number" name="value" required>
+        <button type="submit">Calcular Primos</button>
+    </form>
+
+    <hr>
+    <h3>Buscar (versión anterior)</h3>
+    <form action="/proxy/buscar" method="post">
+        <label>Lista:</label>
+        <input type="text" name="lista" placeholder="ej: 1,2,3,4">
+        <label>Elemento:</label>
+        <input type="text" name="elemento">
+        <input type="hidden" name="tipo" value="lineal">
+        <button type="submit">Buscar Lineal</button>
+    </form>
+
+    <form action="/proxy/buscar" method="post">
+        <label>Lista:</label>
+        <input type="text" name="lista" placeholder="ej: 1,2,3,4">
+        <label>Elemento:</label>
+        <input type="text" name="elemento">
+        <input type="hidden" name="tipo" value="binaria">
+        <button type="submit">Buscar Binaria</button>
+    </form>
+</body>
+</html>
